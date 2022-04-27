@@ -6,10 +6,16 @@ using namespace std;
 
 class Person
 {
-	int group = 0;
-
 	string name;
 	string surname;
 
+public:
+
+	Person();
+	Person(const string& name, const string& surname);
+
+	int getGroup()const;
+	const string& getName()const;
+	const string& getSurname()const;
 };
 
